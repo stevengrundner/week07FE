@@ -68,10 +68,22 @@ console.log(length);
             // For example:
             // let names = ["Kelly", "Sam", "Kate"];    // starting with this array
             // let nameLengths = [5, 3, 4];             // create a new array
+       
+                                                        // using the sum function    
+    let nameLengths = names.map(function(names){      //creating a new array called nameLengths nad returning the length of each name
+        return names.length;
+    });
 
+    console.log(nameLengths);
 //----------------------------------------------------------------------------//
 
 //      6) Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
+
+    let sum = nameLengths.reduce(function(accumulator, currentValue){   //using the reducer function
+        return accumulator + currentValue;                          // creating a new array to reduce all the individual
+    });                                                            //name lengths down to one and adding it all together
+   
+    console.log(sum);
 
 
 //----------------------------------------------------------------------------//
@@ -125,6 +137,10 @@ console.log(addingMachine(numbers) / numbers.length); // i'm using the adding ma
 
 //      11) Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
+let numbersOne = [3, 7, 14, 16, 18, 23, 75];       // array numberOne
+let numbersTwo = [15, 65, 33, 41, 56, 18, 125];     // array numberTwo
+
+
 //----------------------------------------------------------------------------//
 
 //     12) Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
@@ -133,7 +149,6 @@ console.log(addingMachine(numbers) / numbers.length); // i'm using the adding ma
 //----------------------------------------------------------------------------//
 
 //      13) Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
-
 
 
 //----------------------------------------------------------------------------//
