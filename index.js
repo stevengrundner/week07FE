@@ -77,25 +77,49 @@ console.log(length);
 //----------------------------------------------------------------------------//
 
 //      7) Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in 'Hello' and 3, I would expect the function to return 'HelloHelloHello').
-    let myfunction = (a, b) => {      
-        let result = '';                // letting the result be a blank string, a is what is added, b is the amount of times it is added
+    let myfunction = (n, b) => {      
+        let result = ``;                // letting the result be a blank string, n is what is added, b is the amount of times it is added
         for(i = 0; i < b; i++){         // using a for loop to concatinate the results
-            result += a;
+            result += n;
         }                   //
         return result;
     }
-       console.log(myfunction("Steven", 3));
+      console.log(myfunction("Steven", 3));
 //----------------------------------------------------------------------------//
 
 //      8) Write a function that takes two parameters, firstName and lastName, and returns a full name. The full name should be the first and the last name separated by a space.
 
+function createFullName(firstName, lastName){
+    console.log(firstName + ' ' +lastName);
+}
+
+createFullName('John', 'Doe');
 //----------------------------------------------------------------------------//
 
 //      9) Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
+let numbers = [3, 7, 14, 16, 18, 23, 15, 100];
+
+function addingMachine(array) {
+    let sum = 0;                                // created a variable called sum and set it to 0
+    for (let i = 0; i < numbers.length; i++) {    // im' iterating through the array
+      sum += array[i];                          // add each element to the sum variable
+    }
+    return sum;                               // return the sum variable
+}
+console.log(addingMachine(numbers));
+
+  if(addingMachine(numbers) > 100){
+    console.log(true);
+  } else {
+    console.log(false)
+  }
+
 //----------------------------------------------------------------------------//
 
 //      10) Write a function that takes an array of numbers and returns the average of all the elements in the array.
+
+console.log(addingMachine(numbers) / numbers.length); // i'm using the adding machine function i created in question #9 and dividing it by the length of the numbers array used in question #9
 
 //----------------------------------------------------------------------------//
 
