@@ -140,15 +140,46 @@ console.log(addingMachine(numbers) / numbers.length); // i'm using the adding ma
 let numbersOne = [3, 7, 14, 16, 18, 23, 75];       // array numberOne
 let numbersTwo = [15, 65, 33, 41, 56, 18, 125];     // array numberTwo
 
+function addingMachine1(array) {
+    let sum = 0;                                // created a variable called sum and set it to 0
+    for (let i = 0; i < numbersOne.length; i++) {    // im' iterating through the array
+      sum += array[i];                          // add each element to the sum variable
+    }
+    return sum;                               // return the sum variable
+}
+console.log(addingMachine1(numbersOne));      // logging the sum 
+
+console.log(addingMachine1(numbersOne) / numbersOne.length);  // diving the sum by the amount of numbers
+
+
+
+
+
+function addingMachine2(array) {
+    let sum = 0;                                // created a variable called sum and set it to 0
+    for (let i = 0; i < numbersTwo.length; i++) {    // im' iterating through the array
+      sum += array[i];                          // add each element to the sum variable
+    }
+    return sum;                               // return the sum variable
+}
+console.log(addingMachine1(numbersTwo));      // logging the sum
+
+console.log(addingMachine2(numbersTwo) / numbersTwo.length); // diving the sum by the amount of numbers
+
+
+console.log(((addingMachine1(numbersOne) / numbersOne.length)) > (addingMachine2(numbersTwo) / numbersTwo.length));  // taking the average of array #1 and seeing if it's greater than the sum of array #2 --> when adding or subtracting numbers in the array the entire code still works
+
 
 //----------------------------------------------------------------------------//
 
 //     12) Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
 
+
 //----------------------------------------------------------------------------//
 
 //      13) Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+
 
 
 //----------------------------------------------------------------------------//
