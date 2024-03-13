@@ -174,12 +174,23 @@ console.log(((addingMachine1(numbersOne) / numbersOne.length)) > (addingMachine2
 
 //     12) Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
-
-
 //----------------------------------------------------------------------------//
 
 //      13) Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
 
 
+ let runningYards = [125, 189, 274, 158, 98, 194, 206, 67, 178, 143, 139, 209, 238, 197, 278, 203]; // total running yards per game
 
-//----------------------------------------------------------------------------//
+ function totalYards(array) {                                       // function to add up total running yards per game into season total
+  let sum = 0;                                
+  for (let i = 0; i < runningYards.length; i++) {    
+    sum += array[i];                          
+  }
+  return sum;                              
+}
+
+console.log(totalYards(runningYards));                          // logging the total running yards in a season
+
+console.log(totalYards(runningYards) / runningYards.length);    // figuring out the average running yards per game
+
+//----------------------------------------------------------------------------/?
