@@ -189,8 +189,8 @@ console.log(((addingMachine1(numbersOne) / numbersOne.length)) > (addingMachine2
   return sum;                              
 }
 
-console.log(totalYards(runningYards));                          // logging the total running yards in a season
+console.log("Total yards per season" + " " + totalYards(runningYards));                          // logging the total running yards in a season
 
-console.log(totalYards(runningYards) / runningYards.length);    // figuring out the average running yards per game
+console.log("Average yards per game" + " " + totalYards(runningYards) / runningYards.length);    // figuring out the average running yards per game
 
 //----------------------------------------------------------------------------/?
