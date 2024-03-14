@@ -174,6 +174,19 @@ console.log(((addingMachine1(numbersOne) / numbersOne.length)) > (addingMachine2
 
 //     12) Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
+
+
+  function willBuyDrink(a, b){              // Created a function to show that if a (isHotOutside & b moneyInPocket is greater than 10.50
+    if(a === true)                          // i will buy a drink vs swithching the variables i will not buy a drink.
+    if (b > 10.50){
+        console.log("I will buy a drink");
+      } else {
+        console.log("I will not buy a drink");
+      }
+    }
+  
+
+
 //----------------------------------------------------------------------------//
 
 //      13) Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
